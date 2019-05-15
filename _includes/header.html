@@ -12,10 +12,11 @@
       {{ site.data.navigation["banner"][lang].title }}
     </a>
 
-    <button class="btn-link float-right site-header-toggle js-site-header-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+    <button class="btn-link float-right site-header-toggle js-site-header-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-toggle="collapse" data-target="#jb-navbar-collapse">
       {% octicon three-bars %}
     </button>
 
+<div class="navbar-collapse in" id="jb-navbar-collapse" style="height: auto;">
     <nav class="site-header-menu float-none float-md-right py-1 mt-4 mt-md-0">
       <ul class="d-block d-md-flex list-style-none">
         <li class="ml-0 ml-md-3"><a class="text-inherit py-3 py-md-0 d-block" href="#">테스트1</a></li>
@@ -26,5 +27,6 @@
         {% endfor %}
       </ul>
     </nav>
+    </div>
   </header>
 </div>
